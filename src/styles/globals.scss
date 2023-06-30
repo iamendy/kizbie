@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 * {
   margin: 0;
@@ -27,6 +28,17 @@ body {
 
 .mobile-menu {
   width: 30px;
+}
+
+.badge {
+  background-color: $orange;
+  color: $black;
+  padding: 6px 16px;
+  @include body-text;
+  font-weight: 600;
+  width: fit-content;
+  text-transform: uppercase;
+  border-radius: 15px;
 }
 
 @media (min-width: 1024px) {
