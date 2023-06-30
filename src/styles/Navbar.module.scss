@@ -1,0 +1,44 @@
+@import "variables";
+@import "mixins";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+
+  & span {
+    @include body-text;
+    font-weight: 600;
+    @include font-size(24px);
+    margin-left: 5px;
+    display: inline-block;
+  }
+}
+
+.links {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 40px;
+  }
+  .links {
+    display: flex;
+    @include body-text;
+
+    & a:first-child {
+      margin-right: 30px;
+    }
+
+    & a {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+}

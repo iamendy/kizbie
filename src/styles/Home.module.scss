@@ -1,0 +1,105 @@
+@import "variables";
+@import "mixins";
+
+.section {
+  padding: 24px 20px 48px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  & .upper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  .intro {
+    @include header-text;
+    font-size: 40px;
+    letter-spacing: -0.5px;
+  }
+
+  .subtext {
+    @include body-text;
+  }
+
+  .get {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $black;
+    background-color: transparent;
+    padding: 15px 30px;
+    border-radius: 40px;
+    font-size: 16px;
+    @include body-text;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 36px 20px 48px;
+  }
+
+  .hero {
+    .intro {
+      width: 70%;
+    }
+
+    .subtext {
+      width: 60%;
+    }
+
+    .astro {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 40px 40px 80px;
+  }
+  .hero {
+    flex-direction: row;
+    align-items: center;
+
+    .intro {
+      @include font-size(64px);
+    }
+
+    .subtext {
+      @include font-size(18px);
+    }
+    .astro {
+      width: 90%;
+    }
+
+    .intro,
+    .subtext {
+      width: 100%;
+    }
+
+    .upper,
+    .lower {
+      flex: 1 1;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .box {
+    background-color: green;
+  }
+}
+
+@media (min-width: 1536px) {
+  .box {
+    background-color: purple;
+  }
+}
