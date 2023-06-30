@@ -1,93 +1,127 @@
 @import "variables";
 @import "mixins";
 
-.section {
+.heroSection {
   padding: 24px 20px 48px;
-}
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  row-gap: 40px;
-  & .upper {
+  .hero {
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: 40px;
+    & .upper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+    }
+
+    .intro {
+      @include header-text;
+      font-size: 40px;
+      letter-spacing: -0.5px;
+    }
+
+    .subtext {
+      @include body-text;
+    }
+
+    .get {
+      width: fit-content;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid $black;
+      background-color: transparent;
+      padding: 15px 30px;
+      border-radius: 40px;
+      font-size: 16px;
+      @include body-text;
+      font-weight: 500;
+    }
+  }
+}
+
+.sponsorSection {
+  padding: 32px 20px;
+
+  .sponsorWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    padding: 20px 0;
+    border-top: 1px solid $lighter;
+    border-bottom: 1px solid $lighter;
   }
 
-  .intro {
-    @include header-text;
-    font-size: 40px;
-    letter-spacing: -0.5px;
-  }
-
-  .subtext {
-    @include body-text;
-  }
-
-  .get {
-    width: fit-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid $black;
-    background-color: transparent;
-    padding: 15px 30px;
-    border-radius: 40px;
-    font-size: 16px;
-    @include body-text;
-    font-weight: 500;
+  .logo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
 @media (min-width: 768px) {
-  .section {
+  .heroSection {
     padding: 36px 20px 48px;
+
+    .hero {
+      .astro {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
   }
 
-  .hero {
-    .intro {
-      width: 70%;
-    }
-
-    .subtext {
-      width: 60%;
-    }
-
-    .astro {
-      width: 80%;
+  .sponsorSection {
+    .logo {
+      width: 50%;
       margin: 0 auto;
     }
   }
 }
 
 @media (min-width: 1024px) {
-  .section {
+  .heroSection {
     padding: 40px 40px 80px;
+
+    .hero {
+      flex-direction: row;
+      align-items: center;
+
+      .intro {
+        @include font-size(64px);
+      }
+
+      .subtext {
+        @include font-size(18px);
+      }
+      .astro {
+        width: 90%;
+      }
+
+      .intro,
+      .subtext {
+        width: 100%;
+      }
+
+      .upper,
+      .lower {
+        flex: 1 1;
+      }
+    }
   }
-  .hero {
-    flex-direction: row;
-    align-items: center;
 
-    .intro {
-      @include font-size(64px);
+  .sponsorSection {
+    .sponsorWrapper {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    .subtext {
-      @include font-size(18px);
-    }
-    .astro {
-      width: 90%;
-    }
-
-    .intro,
-    .subtext {
-      width: 100%;
-    }
-
-    .upper,
-    .lower {
-      flex: 1 1;
+    .logo {
+      width: 60%;
+      margin: 0 auto;
     }
   }
 }
