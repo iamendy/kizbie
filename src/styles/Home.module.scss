@@ -61,6 +61,10 @@
       height: auto;
     }
   }
+
+  .logo:nth-child(5) {
+    display: none;
+  }
 }
 
 .aboutSection {
@@ -96,6 +100,11 @@
       @include header-text;
       font-weight: 500;
       font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .subtext {
+      @include body-text;
     }
   }
 
@@ -109,6 +118,83 @@
       line-height: 120%;
       font-size: 24px;
     }
+  }
+
+  .top,
+  .bottom {
+    div {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.bookSection {
+  padding: 64px 20px;
+
+  .booksWrapper {
+    padding: 40px 0;
+    border-top: solid 1px $lighter;
+    border-bottom: 1px solid $lighter;
+  }
+
+  .header {
+    @include header-text;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+
+  .bookWrapper {
+    padding-top: 32px;
+
+    .book {
+      margin-bottom: 4rem;
+
+      .bottom {
+        b {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .thumb {
+    border-radius: 10px;
+    background-color: $lighter;
+    backdrop-filter: opacity(0.3);
+    display: flex;
+    justify-content: center;
+    height: 200px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .details {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .summary {
+      @include body-text;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+    }
+  }
+  .starWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -136,6 +222,19 @@
       width: 300px;
       margin-right: auto;
     }
+
+    .stats {
+      width: 60%;
+    }
+  }
+
+  .bookSection {
+    .bookWrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 1rem;
+      grid-column-gap: 2rem;
+    }
   }
 }
 
@@ -147,20 +246,32 @@
       flex-direction: row;
       align-items: center;
 
-      .intro {
-        @include font-size(64px);
+      .upper {
+        .intro {
+          @include font-size(48px);
+          width: 90%;
+        }
+
+        .subtext {
+          @include font-size(16px);
+          width: 90%;
+          text-align: justify;
+        }
       }
 
-      .subtext {
-        @include font-size(18px);
-      }
       .astro {
-        width: 90%;
+        width: 70%;
+        margin: 0 0 0 auto;
       }
 
       .intro,
       .subtext {
         width: 100%;
+      }
+
+      .lower {
+        display: flex;
+        justify-items: flex-end;
       }
 
       .upper,
@@ -172,12 +283,16 @@
 
   .sponsorSection {
     .sponsorWrapper {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
     .logo {
-      width: 60%;
+      width: 50%;
       margin: 0 auto;
+    }
+
+    .logo:nth-child(5) {
+      display: block;
     }
   }
 
@@ -195,10 +310,10 @@
       width: 60%;
 
       .intro {
-        font-size: 48px;
+        font-size: 36px;
       }
       .subtext {
-        font-size: 18px;
+        font-size: 16px;
         width: 90%;
       }
     }
@@ -206,9 +321,13 @@
     .stats {
       grid-template-columns: 1fr 1fr;
       column-gap: 15%;
-      width: 90%;
+      width: 70%;
       h3 {
-        font-size: 32px;
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
       }
 
       .top,
@@ -216,6 +335,25 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+      }
+    }
+  }
+
+  .bookSection {
+    .bookWrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+
+      .header {
+        width: 40%;
+        @include header-text;
+        font-size: 36px;
       }
     }
   }

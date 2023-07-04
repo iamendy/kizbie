@@ -13,10 +13,10 @@ const Hero = () => {
             Unleashing the art of Visual Storytelling
           </h1>
           <p className={styles.subtext}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Repudiandae ratione blanditiis provident! Perspiciatis sequi illum
-            error, asperiores expedita quos fugiat esse sit eligendi quibusdam
-            est perferendis aliquam porro adipisci facere.
+            I am a passionate web designer dedicated to bringing your visions to
+            life. With a keen eye for aesthetics and a deep understanding of
+            user experience, I strive to create captivating websites that leave
+            a lasting impression.
           </p>
           <button className={styles.get}>
             <Envelope />

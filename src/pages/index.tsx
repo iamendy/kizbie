@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import Hero from "@/components/Hero";
 import Sponsors from "@/components/Sponsors";
 import About from "@/components/About";
+import Books from "../components/Books";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <Sponsors />
       <About />
+      <Books />
     </Layout>
   );
 }

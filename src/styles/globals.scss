@@ -30,11 +30,18 @@ body {
   width: 30px;
 }
 
+.star {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
 .badge {
   background-color: $orange;
   color: $black;
   padding: 6px 16px;
   @include body-text;
+  font-size: 14px;
   font-weight: 600;
   width: fit-content;
   text-transform: uppercase;
