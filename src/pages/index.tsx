@@ -2,7 +2,8 @@ import Layout from "@/components/Layout";
 import Hero from "@/components/Hero";
 import Sponsors from "@/components/Sponsors";
 import About from "@/components/About";
-import Books from "../components/Books";
+import Books from "@/components/Books";
+import Testimonial from "@/components/Testimonial";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Sponsors />
       <About />
       <Books />
+      <Testimonial />
     </Layout>
   );
 }
