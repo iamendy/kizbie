@@ -48,8 +48,16 @@ body {
   border-radius: 15px;
 }
 
+.test {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   .mobile-menu {
     display: none;
+  }
+
+  .test {
+    display: block;
   }
 }

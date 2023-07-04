@@ -4,11 +4,12 @@ import user from "../../public/img/user.webp";
 
 import Image from "next/image";
 import { poppins } from "@/fonts";
+import Test from "./icons/Test";
 const Testimonial = () => {
   return (
     <section className={styles.testSection}>
       <div className={styles.testWrapper}>
-        <div>
+        <div className={styles.left}>
           <div className="badge">
             <span>Testimonials</span>
           </div>
@@ -22,7 +23,7 @@ const Testimonial = () => {
           </div>
         </div>
 
-        <div>
+        <div className={styles.right}>
           <div className={styles.cardWrapper}>
             <div className={styles.card}>
               <p className={styles.review}>
@@ -35,8 +36,11 @@ const Testimonial = () => {
                   <Image src={user} alt="user" />
                 </div>
                 <div className={styles.authorDetail}>
-                  <b className={styles.authorName}>John Smith</b>
-                  <p className={styles.authorRole}>FitRevolution CEO</p>
+                  <div>
+                    <b className={styles.authorName}>John Smith</b>
+                    <p className={styles.authorRole}>FitRevolution CEO</p>
+                  </div>
+                  <Test />
                 </div>
               </div>
             </div>
@@ -44,7 +48,8 @@ const Testimonial = () => {
             <div className={styles.card}>
               <p className={styles.review}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-                ratione. Autem laboriosam omnis voluptates!
+                ratione. Autem laboriosam omnis voluptates! Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Excepturi, dolor.
               </p>
 
               <div className={styles.author}>
@@ -52,8 +57,11 @@ const Testimonial = () => {
                   <Image src={user} alt="user" />
                 </div>
                 <div className={styles.authorDetail}>
-                  <b className={styles.authorName}>John Smith</b>
-                  <p className={styles.authorRole}>FitRevolution CEO</p>
+                  <div>
+                    <b className={styles.authorName}>John Smith</b>
+                    <p className={styles.authorRole}>FitRevolution CEO</p>
+                  </div>
+                  <Test />
                 </div>
               </div>
             </div>
@@ -61,7 +69,9 @@ const Testimonial = () => {
             <div className={styles.card}>
               <p className={styles.review}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-                ratione. Autem laboriosam omnis voluptates!
+                ratione. Autem laboriosam omnis voluptates! Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Cumque ullam ipsa atque
+                tenetur iusto velit?
               </p>
 
               <div className={styles.author}>
@@ -69,8 +79,32 @@ const Testimonial = () => {
                   <Image src={user} alt="user" />
                 </div>
                 <div className={styles.authorDetail}>
-                  <b className={styles.authorName}>John Smith</b>
-                  <p className={styles.authorRole}>FitRevolution CEO</p>
+                  <div>
+                    <b className={styles.authorName}>John Smith</b>
+                    <p className={styles.authorRole}>FitRevolution CEO</p>
+                  </div>
+                  <Test />
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.card}>
+              <p className={styles.review}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+                ratione. Autem laboriosam omnis voluptates! Lorem ipsum dolor
+                sit amet.
+              </p>
+
+              <div className={styles.author}>
+                <div className={styles.authorDp}>
+                  <Image src={user} alt="user" />
+                </div>
+                <div className={styles.authorDetail}>
+                  <div>
+                    <b className={styles.authorName}>John Smith</b>
+                    <p className={styles.authorRole}>FitRevolution CEO</p>
+                  </div>
+                  <Test />
                 </div>
               </div>
             </div>

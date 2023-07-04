@@ -305,6 +305,18 @@
       grid-column-gap: 2rem;
     }
   }
+
+  .testSection {
+    .clients {
+      width: 40%;
+    }
+
+    .cardWrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -423,6 +435,44 @@
         width: 40%;
         @include header-text;
         font-size: 36px;
+      }
+    }
+  }
+
+  .testSection {
+    .testWrapper {
+      flex-direction: row;
+
+      .left {
+        width: 50%;
+
+        .header {
+          width: 50%;
+          font-size: 36px;
+          @include header-text;
+        }
+      }
+
+      .right {
+        width: 50%;
+
+        .cardWrapper {
+          grid-template-columns: repeat(1, 1fr);
+
+          .card {
+            padding: 32px;
+            .review {
+              font-size: 18px;
+            }
+
+            .authorDetail {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            }
+          }
+        }
       }
     }
   }
