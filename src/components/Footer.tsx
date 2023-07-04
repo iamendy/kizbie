@@ -3,8 +3,10 @@ import Image from "next/image";
 import call from "../../public/img/call.svg";
 import { poppins } from "../fonts";
 import Envelope from "./icons/Envelope";
+import { useRouter } from "next/router";
 
 const Footer = () => {
+  //const router
   return (
     <footer className={styles.footerSection}>
       <div className={styles.footerWrapper}>

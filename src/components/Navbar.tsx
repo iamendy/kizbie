@@ -8,11 +8,11 @@ const Navbar = () => {
   return (
     <nav className={styles.navbarWrapper}>
       <div className={styles.navbar}>
-        <div className={styles.logo}>
+        <Link href="/" className={styles.logo}>
           <Icon />
 
           <span>Kizbie</span>
-        </div>
+        </Link>
 
         <Menu />
 
@@ -24,8 +24,8 @@ const Navbar = () => {
             <Cart />
           </Link>
           <div>
-            <Link href="#">About</Link>
-            <Link href="#">Contact</Link>
+            <Link href="/about">About</Link>
+            <Link href="/contact">Contact</Link>
           </div>
         </div>
       </div>

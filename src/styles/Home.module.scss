@@ -327,7 +327,7 @@
 
 @media (min-width: 1024px) {
   .heroSection {
-    padding: 40px 40px 80px;
+    padding: 5rem 40px 80px;
 
     .hero {
       flex-direction: row;
@@ -448,7 +448,7 @@
   }
 
   .testSection {
-    padding: 40px 40px 80px;
+    padding: 40px 40px 0;
     .testWrapper {
       flex-direction: row;
 
@@ -484,17 +484,5 @@
         }
       }
     }
-  }
-}
-
-@media (min-width: 1280px) {
-  .box {
-    background-color: green;
-  }
-}
-
-@media (min-width: 1536px) {
-  .box {
-    background-color: purple;
   }
 }
