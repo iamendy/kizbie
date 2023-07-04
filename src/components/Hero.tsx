@@ -18,7 +18,7 @@ const Hero = () => {
             user experience, I strive to create captivating websites that leave
             a lasting impression.
           </p>
-          <button className={styles.get}>
+          <button className="action">
             <Envelope />
             <span>Let's get started</span>
           </button>
