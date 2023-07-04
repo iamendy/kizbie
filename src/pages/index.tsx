@@ -8,11 +8,13 @@ import Testimonial from "@/components/Testimonial";
 export default function Home() {
   return (
     <Layout>
-      <Hero />
-      <Sponsors />
-      <About />
-      <Books />
-      <Testimonial />
+      <main className="main-wrapper">
+        <Hero />
+        <Sponsors />
+        <About />
+        <Books />
+        <Testimonial />
+      </main>
     </Layout>
   );
 }

@@ -1,6 +1,16 @@
 @import "variables";
 @import "mixins";
 
+.navbarWrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $primary;
+  z-index: 1000;
+  box-shadow: 2px -2px 5px $lighter;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -26,13 +36,36 @@
 
 @media (min-width: 1024px) {
   .navbar {
-    padding: 40px;
+    padding: 20px 40px;
   }
   .links {
     display: flex;
+    justify-content: space-between;
+
+    .cart {
+      position: relative;
+      margin-right: 30px;
+
+      border-radius: 50%;
+
+      .count {
+        position: absolute;
+        top: -10px;
+        font-size: 12px;
+        left: 15px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $orange;
+      }
+    }
+
     @include body-text;
 
-    & a:first-child {
+    & a:not(:last-child) {
       margin-right: 30px;
     }
 

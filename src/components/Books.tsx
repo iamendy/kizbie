@@ -4,8 +4,8 @@ import title1 from "../../public/img/title1.jpg";
 import title2 from "../../public/img/title2.jpg";
 import title3 from "../../public/img/title3.jpg";
 import title4 from "../../public/img/title4.jpg";
-import title5 from "../../public/img/title5.jpg";
 import Star from "./icons/Star";
+import Cart from "./icons/Cart";
 
 const Books = () => {
   return (
@@ -22,6 +22,7 @@ const Books = () => {
           <div className={styles.bookWrapper}>
             <div className={styles.book}>
               <div className={styles.thumb}>
+                <span className={styles.price}>$15</span>
                 <Image src={title1} alt="Title 1" />
               </div>
               <div className={styles.details}>
@@ -41,13 +42,17 @@ const Books = () => {
                     <Star />
                     <Star />
                   </div>
-                  <b>$15</b>
+
+                  <div className={styles.selector}>
+                    <Cart /> <span>Add</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className={styles.book}>
               <div className={styles.thumb}>
+                <span className={styles.price}>$15</span>
                 <Image src={title4} alt="Title 1" />
               </div>
               <div className={styles.details}>
@@ -67,18 +72,52 @@ const Books = () => {
                     <Star />
                     <Star />
                   </div>
-                  <b>$15</b>
+
+                  <div className={styles.selector}>
+                    <Cart /> <span>Add</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className={styles.book}>
               <div className={styles.thumb}>
+                <span className={styles.price}>$15</span>
+                <Image src={title3} alt="Title 1" />
+              </div>
+              <div className={styles.details}>
+                <div className={styles.title}>
+                  <h3>Aesop's Fable Aesop's Fable Aesop's Fable </h3>
+                </div>
+
+                <p className={styles.summary}>
+                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Dolorum.
+                </p>
+
+                <div className={styles.bottom}>
+                  <div className={styles.starWrapper}>
+                    <Star />
+                    <Star />
+                    <Star />
+                    <Star />
+                  </div>
+
+                  <div className={styles.selector}>
+                    <Cart /> <span>Add</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.book}>
+              <div className={styles.thumb}>
+                <span className={styles.price}>$15</span>
                 <Image src={title2} alt="Title 1" />
               </div>
               <div className={styles.details}>
                 <div className={styles.title}>
-                  <h3>Aesop's Fable </h3>
+                  <h3>Aesop's Fable Aesop's Fable Aesop's Fable </h3>
                 </div>
 
                 <p className={styles.summary}>
@@ -93,18 +132,51 @@ const Books = () => {
                     <Star />
                     <Star />
                   </div>
-                  <b>$15</b>
+
+                  <div className={styles.selector}>
+                    <Cart /> <span>Add</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.book}>
+              <div className={styles.thumb}>
+                <span className={styles.price}>$15</span>
+                <Image src={title1} alt="Title 1" />
+              </div>
+              <div className={styles.details}>
+                <div className={styles.title}>
+                  <h3>Aesop's Fable Aesop's Fable Aesop's Fable </h3>
+                </div>
+
+                <p className={styles.summary}>
+                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Dolorum.
+                </p>
+
+                <div className={styles.bottom}>
+                  <div className={styles.starWrapper}>
+                    <Star />
+                    <Star />
+                    <Star />
+                    <Star />
+                  </div>
+
+                  <div className={styles.selector}>
+                    <Cart /> <span>Add</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className={styles.book}>
               <div className={styles.thumb}>
-                <Image src={title3} alt="Title 1" />
+                <span className={styles.price}>$15</span>
+                <Image src={title4} alt="Title 1" />
               </div>
               <div className={styles.details}>
                 <div className={styles.title}>
-                  <h3>Aesop's Fable Aesop's Fable </h3>
+                  <h3>Aesop's Fable Aesop's Fable Aesop's Fable </h3>
                 </div>
 
                 <p className={styles.summary}>
@@ -119,59 +191,10 @@ const Books = () => {
                     <Star />
                     <Star />
                   </div>
-                  <b>$15</b>
-                </div>
-              </div>
-            </div>
 
-            <div className={styles.book}>
-              <div className={styles.thumb}>
-                <Image src={title3} alt="Title 1" />
-              </div>
-              <div className={styles.details}>
-                <div className={styles.title}>
-                  <h3>Aesop's Fable Aesop's Fable </h3>
-                </div>
-
-                <p className={styles.summary}>
-                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit. Dolorum.
-                </p>
-
-                <div className={styles.bottom}>
-                  <div className={styles.starWrapper}>
-                    <Star />
-                    <Star />
-                    <Star />
-                    <Star />
+                  <div className={styles.selector}>
+                    <Cart /> <span>Add</span>
                   </div>
-                  <b>$15</b>
-                </div>
-              </div>
-            </div>
-
-            <div className={styles.book}>
-              <div className={styles.thumb}>
-                <Image src={title3} alt="Title 1" />
-              </div>
-              <div className={styles.details}>
-                <div className={styles.title}>
-                  <h3>Aesop's Fable Aesop's Fable </h3>
-                </div>
-
-                <p className={styles.summary}>
-                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                  consectetur adipisicing elit. Dolorum.
-                </p>
-
-                <div className={styles.bottom}>
-                  <div className={styles.starWrapper}>
-                    <Star />
-                    <Star />
-                    <Star />
-                    <Star />
-                  </div>
-                  <b>$15</b>
                 </div>
               </div>
             </div>
