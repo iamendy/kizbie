@@ -7,6 +7,7 @@ import beach from "../../../public/img/beach-rescue.jpeg";
 import beach2 from "../../../public/img/beach-rescue-2.jpeg";
 import user from "../../../public/img/user.webp";
 import { Books } from "../../components/sections";
+import title1 from "../../../public/img/title1.jpg";
 
 const Book = () => {
   return (
@@ -16,6 +17,11 @@ const Book = () => {
           <div className={styles.titleSection}>
             <div className={styles.top}>
               <p className="badge"> Adventure</p>
+
+              <div className={styles.cover}>
+                <Image src={title1} alt="Book title cover" />
+              </div>
+
               <h3 className={styles.title} style={poppins.style}>
                 Sami’s Beach Rescue
               </h3>
