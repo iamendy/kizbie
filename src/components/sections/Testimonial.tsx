@@ -1,10 +1,10 @@
-import styles from "../styles/Home.module.scss";
-import testimonials from "../../public/img/testimonials.svg";
-import user from "../../public/img/user.webp";
-
+import styles from "@/styles/Home.module.scss";
+import testimonials from "../../../public/img/testimonials.svg";
+import user from "../../../public/img/user.webp";
 import Image from "next/image";
 import { poppins } from "@/fonts";
-import Test from "./icons/Test";
+import { Star2 } from "@/components/icons";
+
 const Testimonial = () => {
   return (
     <section className={styles.testSection}>
@@ -40,7 +40,7 @@ const Testimonial = () => {
                     <b className={styles.authorName}>John Smith</b>
                     <p className={styles.authorRole}>FitRevolution CEO</p>
                   </div>
-                  <Test />
+                  <Star2 />
                 </div>
               </div>
             </div>
@@ -61,7 +61,7 @@ const Testimonial = () => {
                     <b className={styles.authorName}>John Smith</b>
                     <p className={styles.authorRole}>FitRevolution CEO</p>
                   </div>
-                  <Test />
+                  <Star2 />
                 </div>
               </div>
             </div>
@@ -83,7 +83,7 @@ const Testimonial = () => {
                     <b className={styles.authorName}>John Smith</b>
                     <p className={styles.authorRole}>FitRevolution CEO</p>
                   </div>
-                  <Test />
+                  <Star2 />
                 </div>
               </div>
             </div>
@@ -104,7 +104,7 @@ const Testimonial = () => {
                     <b className={styles.authorName}>John Smith</b>
                     <p className={styles.authorRole}>FitRevolution CEO</p>
                   </div>
-                  <Test />
+                  <Star2 />
                 </div>
               </div>
             </div>

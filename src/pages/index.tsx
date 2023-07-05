@@ -1,9 +1,11 @@
 import Layout from "@/components/Layout";
-import Hero from "@/components/Hero";
-import Sponsors from "@/components/Sponsors";
-import About from "@/components/About";
-import Books from "@/components/Books";
-import Testimonial from "@/components/Testimonial";
+import {
+  Hero,
+  Sponsors,
+  About,
+  Books,
+  Testimonial,
+} from "@/components/sections";
 
 export default function Home() {
   return (

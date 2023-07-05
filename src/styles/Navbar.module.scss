@@ -38,6 +38,32 @@
   display: none;
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.cart {
+  position: relative;
+  margin-right: 30px;
+  color: $black;
+  border-radius: 50%;
+
+  .count {
+    position: absolute;
+    top: -10px;
+    font-size: 12px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $orange;
+  }
+}
+
 @media (min-width: 1024px) {
   .navbar {
     padding: 20px 40px;
@@ -45,27 +71,6 @@
   .links {
     display: flex;
     justify-content: space-between;
-
-    .cart {
-      position: relative;
-      margin-right: 30px;
-
-      border-radius: 50%;
-
-      .count {
-        position: absolute;
-        top: -10px;
-        font-size: 12px;
-        left: 15px;
-        width: 20px;
-        height: 20px;
-        border-radius: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $orange;
-      }
-    }
 
     @include body-text;
 
@@ -77,5 +82,9 @@
       text-decoration: none;
       color: $black;
     }
+  }
+
+  .cartMobile {
+    display: hidden;
   }
 }

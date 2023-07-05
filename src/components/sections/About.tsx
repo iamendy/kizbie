@@ -1,5 +1,5 @@
 import styles from "@/styles/Home.module.scss";
-import world from "../../public/img/world.svg";
+import world from "../../../public/img/world.svg";
 import Image from "next/image";
 import { poppins } from "@/fonts";
 

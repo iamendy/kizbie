@@ -134,7 +134,7 @@
     padding-top: 32px;
 
     .book {
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
       border: solid 1px $lighter;
       padding: 10px;
       border-radius: 10px;
@@ -150,6 +150,8 @@
     border-radius: 10px;
     background-color: $lighter;
     backdrop-filter: opacity(0.3);
+    text-decoration: none;
+    color: $black;
     display: flex;
     justify-content: center;
     height: 200px;
@@ -275,7 +277,7 @@
 
 @media (min-width: 768px) {
   .heroSection {
-    padding: 36px 20px 48px;
+    padding: 36px 30px 48px;
 
     .hero {
       .astro {
@@ -286,6 +288,8 @@
   }
 
   .sponsorSection {
+    padding-left: 30px;
+    padding-right: 30px;
     .logo {
       width: 50%;
       margin: 0 auto;
@@ -304,6 +308,9 @@
   }
 
   .bookSection {
+    padding-left: 30px;
+    padding-right: 30px;
+
     .bookWrapper {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -313,6 +320,9 @@
   }
 
   .testSection {
+    padding-left: 30px;
+    padding-right: 30px;
+
     .clients {
       width: 40%;
     }
@@ -428,7 +438,7 @@
   }
 
   .bookSection {
-    padding: 40px 40px 80px;
+    padding: 40px 40px 40px;
     .bookWrapper {
       grid-template-columns: repeat(3, 1fr);
     }

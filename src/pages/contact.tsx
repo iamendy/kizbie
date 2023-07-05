@@ -1,6 +1,5 @@
 import mailbox from "../../public/img/mailbox.svg";
 import Image from "next/image";
-import Layout from "../components/Layout";
 import styles from "../styles/Contact.module.scss";
 import { poppins, inter } from "../fonts";
 import Navbar from "../components/Navbar";

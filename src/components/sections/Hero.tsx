@@ -1,8 +1,8 @@
-import Envelope from "@/components/icons/Envelope";
-import astronaut from "../../public/img/astro.svg";
+import { Envelope } from "@/components/icons";
+import astronaut from "../../../public/img/astro.svg";
 import Image from "next/image";
 import styles from "@/styles/Home.module.scss";
-import { poppins } from "../fonts/index";
+import { poppins } from "@/fonts/index";
 
 const Hero = () => {
   return (
